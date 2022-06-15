@@ -27,3 +27,11 @@ function highAndLow(numbers){
   
   return `${maxNumber} ${minNumber}`
 }
+
+// Variant using Math
+function highAndLow2(numbers) {
+  const arrayNumbers = numbers.split(' ');
+
+  // Math independently translates strings to numbers
+  return `${Math.max(...arrayNumbers)} ${Math.min(...arrayNumbers)}`;
+}
