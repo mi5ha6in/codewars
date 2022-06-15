@@ -1,7 +1,7 @@
 // 7 kyu https://www.codewars.com/kata/disemvowel-trolls
 
 function disemvowel(str) {
-  //   create a set to check for the presence of a letter in O(1)
+  // create a set to check for the presence of a letter in O(1)
   // object can be used
 
   const vowels = new Set(["a", "e", "i", "o", "u"]);
@@ -16,4 +16,9 @@ function disemvowel(str) {
   }
 
   return stringWithoutVowels.join("");
+}
+
+// Variant using RegExp
+function disemvowel2(str) {
+  return str.replace(/[aeiou]/gi, "");
 }
